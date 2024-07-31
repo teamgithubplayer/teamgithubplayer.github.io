@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+}
+.grid-container {
+    display: flex;   
+}
+.grid-container > div.gc1 {
+    width: 25%;         
+    text-align: center;             
+}
+.grid-container div.gc1 img {  
+    height: 268px;
+    width: 268px;  
+}
+.grid-container div.gc1 h3 {  
+    font-size: 24px;
+    font-weight: 300;
+    font-family: Raleway,sans-serif;
+    color: rgb(81, 116, 85);
+}
+.grid-container div.gc1 p {  
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Roboto,sans-serif;
+    color: black;
+}
+.grid-container > div.gc2 {
+    width: 50%;    
+    background-color: rgb(81, 116, 85);   
+    align-content: center;          
+}
+.grid-container > div.gc3 {
+    width: 25%;         
+    text-align: center;             
+}
+.grid-container div.gc3 img {  
+    height: 268px;
+    width: 268px;  
+}
+.grid-container div.gc3 h3 {  
+    font-size: 24px;
+    font-weight: 300;
+    font-family: Raleway,sans-serif;
+    color: white;
+}
+.grid-container div.gc3 p {  
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Roboto,sans-serif;
+    color: white;
+}
+.grid-container > div.gc4 {
+    width: 33.3333333333%;                    
+}
+.grid-container div.gc4 img {  
+    height: 359px;
+    width: 359px; 
+    padding: 0 15px 30px; 
+}
+.arrowdown {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: #323335;
+    padding: 16px 30px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Roboto, sans-serif;
+    cursor: pointer;
+}
+.button1 {
+    background-color: rgb(81, 116, 85);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 16px 30px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Roboto, sans-serif;
+    cursor: pointer;
+}
+.h2green {
+    text-align: center; 
+    font-size: 36px; 
+    font-weight: 300; 
+    font-family: Raleway,sans-serif; 
+    color:rgb(81, 116, 85); 
+}
+.h2white {
+    text-align: center; 
+    font-size: 36px; 
+    font-weight: 300; 
+    font-family: Raleway,sans-serif; 
+    color:white; 
+    padding: 20px;
+    margin: unset;
+}
+.h3green {
+    text-align: center; 
+    font-size: 24px; 
+    font-weight: 300; 
+    font-family: Raleway,sans-serif; 
+    color:rgb(81, 116, 85); 
+    padding: 20px;
+    margin: unset;
+}
+.h3white {
+    text-align: center; 
+    font-size: 24px; 
+    font-weight: 300; 
+    font-family: Raleway,sans-serif; 
+    color:white; 
+    padding: 20px;
+    margin: unset;
+}
+.ptext_black {
+    font-size: 18px; 
+    font-family: Roboto, sans-serif; 
+    font-weight: 300; 
+    line-height: 1.5;
+    color: #323335;
+}
+.ptext_white {
+    font-size: 18px; 
+    font-family: Roboto, sans-serif; 
+    font-weight: 300; 
+    line-height: 1.5;
+    color: white;
+}
