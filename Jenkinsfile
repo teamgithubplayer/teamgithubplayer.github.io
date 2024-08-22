@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'cypress/base:20.14.0'
+        }
+    }
 
     stages {
         stage('Build') {
@@ -10,6 +14,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh 'npm ci'
+                sh "npm run test:ci:record"
             }
         }
         stage('Deploy') {
