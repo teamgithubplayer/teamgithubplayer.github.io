@@ -17,6 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh "npm i"
                 sh "npm run cy:open"
             }
         }
