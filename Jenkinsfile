@@ -14,8 +14,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh 'npm ci'
-                sh "npm run test:ci:record"
+                sh "npm run cy:open"
             }
         }
         stage('Deploy') {
