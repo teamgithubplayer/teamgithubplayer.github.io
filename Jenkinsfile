@@ -23,7 +23,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 bat "npm i"
-                bat "npx cypress run --spec "cypress/e2e/home_page.cy.js""
+                bat "npm run cy:run"
             }
         }
         stage('Deploy') {

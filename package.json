@@ -171,7 +171,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "cypress open",
-    "cy:run": "cypress run", 
+    "cy:run": "cypress run --spec 'cypress/e2e/home_page.cy.js'", 
     "e2e:chrome": "cypress run --browser chrome"
   },
   "repository": {
