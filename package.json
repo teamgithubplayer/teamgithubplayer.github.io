@@ -170,7 +170,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run", 
+    "e2e:chrome": "cypress run --browser chrome"
   },
   "repository": {
     "type": "git",

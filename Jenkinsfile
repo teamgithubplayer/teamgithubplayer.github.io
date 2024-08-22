@@ -9,6 +9,11 @@ pipeline {
     }
 
     stages {
+        stage('Dependencies') {
+            steps {
+                echo 'Building..'
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building..'
@@ -18,7 +23,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 bat "npm i"
-                bat "npm run cy:open"
+                bat "npx cypress run --spec "cypress/e2e/home_page.cy.js""
             }
         }
         stage('Deploy') {
