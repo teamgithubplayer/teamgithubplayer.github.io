@@ -22,8 +22,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                bat "npm i"
-                bat "npm run cy:run"
+                sh "npm i"
+                sh "npm run cy:run"
             }
         }
         stage('Deploy') {
