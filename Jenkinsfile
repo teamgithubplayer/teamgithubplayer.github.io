@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Dependencies') {
             steps {
-                echo 'Building..'
+                echo 'Dependencies..'
             }
         }
         stage('Build') {
