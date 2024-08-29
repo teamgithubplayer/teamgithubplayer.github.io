@@ -8,6 +8,10 @@ pipeline {
    
     }
 
+    options {
+        ansiColor('xterm')
+    }
+
     stages {
         stage('Dependencies') {
             steps {
