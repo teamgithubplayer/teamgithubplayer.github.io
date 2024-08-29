@@ -27,8 +27,8 @@ pipeline {
             steps {
                 echo 'Testing..'
                 echo '\033[34mHello\033[0m \033[33mcolorful\033[0m \033[35mworld!\033[0m'
-                bat "npm i"
-                bat "npm run cy:run"
+                sh "npm i"
+                sh "npm run cy:run"
             }
         }
         stage('Deploy') {
