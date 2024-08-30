@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             //image 'cypress/base:20.14.0'
-            image 'cypress/included:latest'
+            image 'cypress/base:latest'
         }
     }
 
@@ -32,7 +32,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 echo '\033[34mHello\033[0m \033[33mcolorful\033[0m \033[35mworld!\033[0m'
-                sh "npm i"
+                sh "npm ci"
                 sh "npm run cy:run"
             }
         }
