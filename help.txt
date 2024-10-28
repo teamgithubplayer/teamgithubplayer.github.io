@@ -1,0 +1,12 @@
+Used Git Commands:
+git log –oneline
+git reset <commit-hash>
+
+
+
+npm init
+npm install cypress --save-dev
+npx cypress open
+npm run cy:open
+
+
