@@ -1,6 +1,7 @@
 Used Git Commands:
 git log –oneline
 git reset <commit-hash>
+git checkout main
 
 
 
