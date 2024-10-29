@@ -11,3 +11,8 @@ npx cypress open
 npm run cy:open
 
 
+npm install -g http-server
+cd pathOfYourProject
+http-server -p 8082
+
+
