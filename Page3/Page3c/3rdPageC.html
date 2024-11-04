@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,22 +22,22 @@
                 <div>
                     <nav>
                         <ul class="topnav">
-                            <li><a data-cy="head.el_1" href="../../index.html">Главная</a></li>
-                            <li><a data-cy="head.el_2" href="../../Page2/2ndPage.html">Проекты</a></li>
+                            <li><a data-cy="head.el_1" href="../../index.html" data-i18n="header_text1"></a></li>
+                            <li><a data-cy="head.el_2" href="../../Page2/2ndPage.html" data-i18n="header_text2"></a></li>
                             <li class="dropdown">
-                                <button data-cy="head.el_3" class="dropbtn" onclick="document.location='../3rdPage.html'" style="cursor: pointer;">Этапы/Стоимость
+                                <button data-cy="head.el_3" class="dropbtn" onclick="document.location='../3rdPage.html'" style="cursor: pointer;" data-i18n="header_text3">
                                     <i class="fa fa-caret-down"></i>
                                 </button>
                                 <nav>
                                     <ul class="dropdown-content">
-                                        <li><a data-cy="head.el_3a" href="../Page3a/3rdPageA.html">Консультация</a></li>
-                                        <li><a data-cy="head.el_3b" href="../Page3b/3rdPageB.html">Планировочное решение</a></li>
-                                        <li><a data-cy="head.el_3c" href="3rdPageC.html">Эскиз-проект</a></li>
-                                        <li><a data-cy="head.el_3d" href="../Page3d/3rdPageD.html">Дизайн-проект</a></li>
+                                        <li><a data-cy="head.el_3a" href="../Page3a/3rdPageA.html" data-i18n="header_text4"></a></li>
+                                        <li><a data-cy="head.el_3b" href="../Page3b/3rdPageB.html" data-i18n="header_text5"></a></li>
+                                        <li><a data-cy="head.el_3c" href="3rdPageC.html" data-i18n="header_text6"></a></li>
+                                        <li><a data-cy="head.el_3d" href="../Page3d/3rdPageD.html" data-i18n="header_text7"></a></li>
                                     </ul>
                                 </nav>
                             </li>
-                            <li><a data-cy="head.el_4" href="../../Page4/4thPage.html">Контакты</a></li>                            
+                            <li><a data-cy="head.el_4" href="../../Page4/4thPage.html" data-i18n="header_text8"></a></li>                            
                         </ul>
                     </nav>
                 </div>
@@ -73,6 +73,8 @@
                                 </g>
                             </svg>
                         </a>
+                        <a href="3rdPageC.html" onclick="changeLanguage('en')">en</a>
+                        <a href="3rdPageC.html" onclick="changeLanguage('de')">de</a>  
                     </div>
                 </div>
             </header>            
@@ -80,84 +82,72 @@
         <div>
             <section>
                 <div style="max-width: 730px; margin: auto; padding: 60px; box-sizing: unset;">
-                    <h2 class="h2green">Эскиз-проект</h2>
-                    <p class="ptext_black" style="text-align: center;">
-                        Эскиз-проект включает в себя работу над созданием Moodboard (коллажей) будущего интерьера, (после этапа планировочного решения*) подбором материалов, мебели, освещения и создание списка для покупок.
-                        <br><br>
-                        *Эскиз-проект включает в себя все этапы планировочного решения.
-                    </p>
+                    <h2 class="h2green" data-i18n="body_text1"></h2>
+                    <p class="ptext_black" style="text-align: center;" data-i18n="body_text2"></p>
                 </div>
             </section>
             <section>
                 <div class="ptext_white" style="display: flex; padding: 60px 70px; max-width: 1440px; margin: auto;">
                     <div style="width: 50%; margin: 20px 15px 30px; background-color: rgb(81, 116, 85); padding: 10px;">
-                        <h3 class="h3white" style="text-align: left;">До начала работ</h3>
-                        <ul>
-                            <li>После оплаты отправляем вам бриф для заполнения</li>
-                            <li>Вам необходимо будет отправить все необходимые размеры вашей комнаты/квартиры/дома.</li>
-                        </ul>
+                        <h3 class="h3white" style="text-align: left;" data-i18n="body_text3"></h3>
+                        <ul data-i18n="body_text4"></ul>
                     </div>
                     <div style="width: 50%; margin: 20px 15px 30px; background-color: rgb(81, 116, 85); padding: 10px;">
-                        <h3 class="h3white" style="text-align: left;">Вы получаете</h3>
-                        <ul>
-                            <li>Позле завершения этапа планировочного решения, создаются коллажи будущего интерьера на основе Ваших предпочтений</li>
-                            <li>Делается подбор конкретных материалов, сантехники, мебели, освещения в рамках оговоренного с Вами бюджета.</li>
-                            <li>Консультируемся и доработываем</li>
-                            <li>Составляем список по чистовым материалам, освещению, мебели и предметам декора для воплощения проекта в жизнь</li>
-                        </ul>
+                        <h3 class="h3white" style="text-align: left;" data-i18n="body_text5"></h3>
+                        <ul data-i18n="body_text6"></ul>
                     </div>
                 </div>
             </section>
             <section style="background-color: rgb(81, 116, 85);">
                 <div style="padding: 60px 0;">
                     <div>
-                        <h3 class="h3white">Примеры планировочных решений</h3>
+                        <h3 class="h3white" data-i18n="body_text7"></h3>
                     </div>
                     <div class="slideshow-container" style="margin-top: 25px;">
                         <div data-cy="p3c.slide_1_1" class="mySlides1 fade">
                             <div class="numbertext">1 / 9</div>
                             <img src="slideshow/Foto1.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Деткая для девочки <br>Нойбург-ан-дер-Донау, Германия</div>
+                            <div class="textWhite" data-i18n="body_text8"></div>
                         </div>                    
                         <div data-cy="p3c.slide_1_2" class="mySlides1 fade">
                             <div class="numbertext">2 / 9</div>
                             <img src="slideshow/Foto2.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Спальня <br>Лёне, Германия</div>
+                            <div class="textWhite" data-i18n="body_text9"></div>
                         </div>                    
                         <div data-cy="p3c.slide_1_3" class="mySlides1 fade">
                             <div class="numbertext">3 / 9</div>
                             <img src="slideshow/Foto3.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Гостевой санузел <br>Лёне, Германия</div>
+                            <div class="textWhite" data-i18n="body_text10"></div>
                         </div>    
                         <div data-cy="p3c.slide_1_4" class="mySlides1 fade">
                             <div class="numbertext">4 / 9</div>
                             <img src="slideshow/Foto4.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Терраса <br>Бонн, Германия</div>
+                            <div class="textWhite" data-i18n="body_text11"></div>
                         </div>    
                         <div data-cy="p3c.slide_1_5" class="mySlides1 fade">
                             <div class="numbertext">5 / 9</div>
                             <img src="slideshow/Foto5.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Терраса <br>Бонн, Германия</div>
+                            <div class="textWhite" data-i18n="body_text11"></div>
                         </div>    
                         <div data-cy="p3c.slide_1_6" class="mySlides1 fade">
                             <div class="numbertext">6 / 9</div>
                             <img src="slideshow/Foto6.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Детская <br>Нойбург-ан-дер-Донау, Германия</div>
+                            <div class="textWhite" data-i18n="body_text12"></div>
                         </div>      
                         <div data-cy="p3c.slide_1_7" class="mySlides1 fade">
                             <div class="numbertext">7 / 9</div>
                             <img src="slideshow/Foto7.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Прихожая <br>Лёне, Германия</div>
+                            <div class="textWhite" data-i18n="body_text13"></div>
                         </div>    
                         <div data-cy="p3c.slide_1_8" class="mySlides1 fade">
                             <div class="numbertext">8 / 9</div>
                             <img src="slideshow/Foto8.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Гостиная <br>Лёне, Германия</div>
+                            <div class="textWhite" data-i18n="body_text14"></div>
                         </div>    
                         <div data-cy="p3c.slide_1_9" class="mySlides1 fade">
                             <div class="numbertext">9 / 9</div>
                             <img src="slideshow/Foto9.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Гостиная <br>Лёне, Германия</div>
+                            <div class="textWhite" data-i18n="body_text14"></div>
                         </div>  
                         <a data-cy="p3c.el_1" class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a data-cy="p3c.el_2" class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -221,12 +211,13 @@
                 </div>
                 <br><br><br>
                 <div style="text-align: center; margin-top: 40px; font-weight: 300; font-family: Roboto,sans-serif;">
-                    <a data-cy="foot.el_5" href="" style="padding: 5px 10px; color: #323335;" onmouseover="">Impressum</a>
-                    <a data-cy="foot.el_6" href="" style="padding: 5px 10px; color: #323335;">Datenschutz</a>
-                    <a data-cy="foot.el_7" href="" style="padding: 5px 10px; color: #323335;">Cookie-Einstellungen</a>
+                    <a data-cy="foot.el_5" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text1"></a>
+                    <a data-cy="foot.el_6" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text2"></a>
+                    <a data-cy="foot.el_7" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text3"></a>
                 </div>
             </footer>
         </div>
+        <script src="../../translation.js"></script>
         <script src="../../slideshow1.js"></script>
     </body>
 </html>

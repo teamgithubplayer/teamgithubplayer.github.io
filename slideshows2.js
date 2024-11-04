@@ -47,4 +47,4 @@ function carousel(no) {
     slides[slideIndex[no]-1].style.display = "block";
     dots[slideIndex[no]-1].className += " active";
     setTimeout(carousel, 3000, no); // Change image every 2 seconds
-  }
+}

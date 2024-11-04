@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,22 +21,22 @@
                 <div>
                     <nav>
                         <ul class="topnav">
-                            <li><a data-cy="head.el_1" href="../index.html">Главная</a></li>
-                            <li><a data-cy="head.el_2" href="../Page2/2ndPage.html">Проекты</a></li>
+                            <li><a data-cy="head.el_1" href="../index.html" data-i18n="header_text1"></a></li>
+                            <li><a data-cy="head.el_2" href="../Page2/2ndPage.html" data-i18n="header_text2"></a></li>
                             <li class="dropdown">
-                                <button data-cy="head.el_3" class="dropbtn" onclick="document.location='3rdPage.html'" style="cursor: pointer;">Этапы/Стоимость
+                                <button data-cy="head.el_3" class="dropbtn" onclick="document.location='3rdPage.html'" style="cursor: pointer;" data-i18n="header_text3">
                                     <i class="fa fa-caret-down"></i>
                                 </button>
                                 <nav>
                                     <ul class="dropdown-content">
-                                        <li><a data-cy="head.el_3a" href="../Page3/Page3a/3rdPageA.html">Консультация</a></li>
-                                        <li><a data-cy="head.el_3b" href="../Page3/Page3b/3rdPageB.html">Планировочное решение</a></li>
-                                        <li><a data-cy="head.el_3c" href="../Page3/Page3c/3rdPageC.html">Эскиз-проект</a></li>
-                                        <li><a data-cy="head.el_3d" href="../Page3/Page3d/3rdPageD.html">Дизайн-проект</a></li>
+                                        <li><a data-cy="head.el_3a" href="../Page3/Page3a/3rdPageA.html" data-i18n="header_text4"></a></li>
+                                        <li><a data-cy="head.el_3b" href="../Page3/Page3b/3rdPageB.html" data-i18n="header_text5"></a></li>
+                                        <li><a data-cy="head.el_3c" href="../Page3/Page3c/3rdPageC.html" data-i18n="header_text6"></a></li>
+                                        <li><a data-cy="head.el_3d" href="../Page3/Page3d/3rdPageD.html" data-i18n="header_text7"></a></li>
                                     </ul>
                                 </nav>
                             </li>
-                            <li><a data-cy="head.el_4" href="../Page4/4thPage.html">Контакты</a></li>                            
+                            <li><a data-cy="head.el_4" href="../Page4/4thPage.html" data-i18n="header_text8"></a></li>                            
                         </ul>
                     </nav>
                 </div>
@@ -72,6 +72,8 @@
                                 </g>
                             </svg>
                         </a>
+                        <a href="3rdPage.html" onclick="changeLanguage('en')">en</a>
+                        <a href="3rdPage.html" onclick="changeLanguage('de')">de</a>  
                     </div>
                 </div>
             </header>            
@@ -80,10 +82,7 @@
             <section>
                 <div style="background-image: url('3rdPage1.webp'); background-repeat: no-repeat; background-size: cover; background-position: center; background-color: rgba(255, 255, 255, 0.8); background-blend-mode: lighten;">
                     <div style="align-content: center; text-align: center; height: 1000px;">
-                        <p class="h2green">
-                            Предложение на разработку <br>
-                            интерьерного решения
-                        </p>
+                        <p class="h2green" data-i18n="body_text1"></p>
                     </div>
                     <div>
                         <p style="text-align: center; padding: 20px;">
@@ -94,62 +93,48 @@
             </section>
             <section id="section2"; style="padding: 60px; background-color: rgb(39, 56, 41);">
                 <div>
-                    <h3 class="h3white">Команда</h3>
+                    <h3 class="h3white" data-i18n="body_text2"></h3>
                 </div>
                 <div class="grid-container" style="margin-top: 20px;">
                     <div class="gc3">
                         <img src="Foto1.jpg" alt="">
-                        <h3>имя1</h3>
-                        <p>Креативный директор, дизайнер</p>
+                        <h3 data-i18n="body_text3"></h3>
+                        <p data-i18n="body_text4"></p>
                     </div>
                     <div class="gc3">
                         <img src="Foto2.webp" alt="">
-                        <h3>имя2</h3>
-                        <p>Архитектор, BIM</p>
+                        <h3 data-i18n="body_text5"></h3>
+                        <p data-i18n="body_text6"></p>
                     </div>
                     <div class="gc3">
                         <img src="Foto5.webp" alt="">
-                        <h3>имя3</h3>
-                        <p>Дизайнер - визуализатор</p>
+                        <h3 data-i18n="body_text7"></h3>
+                        <p data-i18n="body_text8"></p>
                     </div>
                     <div class="gc3">
                         <img src="Foto6.webp" alt="">
-                        <h3>имя4</h3>
-                        <p>Визуализатор</p>
+                        <h3 data-i18n="body_text9"></h3>
+                        <p data-i18n="body_text10"></p>
                     </div>
                     <div class="gc3">
                         <img src="Foto4.webp" alt="">
-                        <h3>имя5</h3>
-                        <p>Бизнес ассистент</p>
+                        <h3 data-i18n="body_text11"></h3>
+                        <p data-i18n="body_text12"></p>
                     </div>
                 </div>
             </section>
             <section style="padding: 80px; background-color: rgb(39, 56, 41);">
-                <p style="font-size: 18px; text-align: center; color: white; font-family: Roboto, sans-serif; font-weight: 300;">
-                    Наша работа - это постоянный творческий процесс. <br>
-                    Это история вдохновения, поиска и результата.
-                </p>
+                <p style="font-size: 18px; text-align: center; color: white; font-family: Roboto, sans-serif; font-weight: 300;" data-i18n="body_text13"></p>
             </section>
             <section style="padding: 80px;">
-                <h2 class="h2green">Этапы работы над дизайн-проектом</h2>
+                <h2 class="h2green" data-i18n="body_text14"></h2>
             </section>
             <section style="padding: 60px;">
                 <div style="padding: 20px;">
-                    <h3 class="h3green">
-                        1-этап: Планировочное и стилевое решение
-                    </h3>
+                    <h3 class="h3green" data-i18n="body_text15"></h3>
                 </div>
                 <div style="padding: 20px; text-align: center;">
-                    <ul style="display: inline-block; text-align: left; color: #323335; font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.5;">
-                        <li>Консультация, оформление технического задания на проектирование;</li>
-                        <li>Замеры помещений с выездом на объект, фото-фиксация, изучение объекта;</li>
-                        <li>Обмерный план с привязкой существующих инженерных коммуникаций;</li>
-                        <li>Планировочное решение с расстановкой мебели и оборудования (2-3 варианта);</li>
-                        <li>Обсуждения, корректировки;</li>
-                        <li>Согласование выбранного варианта планировки с заказчиком;</li>
-                        <li>Анализ стилевого решения пространства (подбор возможных вариантов отделки и предметов интерьера);</li>
-                        <li>Согласование концепции будущего интерьера с заказчиком.</li>
-                    </ul>
+                    <ul style="display: inline-block; text-align: left; color: #323335; font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.5;" data-i18n="body_text16" data-i18n="body_text16"></ul>
                 </div>                
             </section>
             <section>
@@ -168,19 +153,13 @@
             <section>
                 <div style="padding: 60px;">
                     <div style="padding: 20px 0;">
-                        <h3 class="h3green" style="margin: unset;">
-                            2-этап: Визуализация
-                        </h3>
+                        <h3 class="h3green" style="margin: unset;" data-i18n="body_text17"></h3>
                     </div>
                     <div style="padding: 20px 0;">
                         <img style="display: block; margin: auto; max-width: 730px;" src="Page3Foto10.webp" alt="">
                     </div>
                     <div style="margin: auto; max-width: 730px; padding: 20px 0;">
-                        <ul style="display: inline-block; text-align: left; color: #323335; font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.5; margin: unset;">
-                            <li>Визуализация основных помещений;</li>
-                            <li>Обсуждение, корректировки (не больше двух);</li>
-                            <li>Согласование эскизов с заказчиком.</li>
-                        </ul>
+                        <ul style="display: inline-block; text-align: left; color: #323335; font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.5; margin: unset;" data-i18n="body_text18"></ul>
                     </div>
                 </div>
             </section>
@@ -190,46 +169,20 @@
                         <img style="display: block; margin: auto; max-width: 645px;" src="Page3Foto11.webp" alt="">
                     </div>
                     <div style="width: 50%; padding: 20px 0 20px 90px;">
-                        <h3 class="h3green" style="text-align: left; margin: 0 0 20px 0;">
-                            3-этап: Рабочие чертежи
-                        </h3>
-                        <ol style="display: block; text-align: left; color: #323335; font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.6;">
-                            <li>План демонтажа существующих перегородок.</li>
-                            <li>План монтажа перегородок и конструкций с маркировкой дверных и оконных проемов. </li>
-                            <li>План полов с указанием типов напольных покрытий и отметки уровня пола.</li>
-                            <li>План укладки плинтусов.</li>
-                            <li>План открытия дверей.</li>
-                            <li>Ведомость дверных проемов и полотен.</li>
-                            <li>План потолков с указанием типов используемых материалов. </li>
-                            <li>План монтажа потолочных лепных изделий.</li>
-                            <li>План расстановки осветительных приборов, привязка выпусков освещения. </li>
-                            <li>План привязки выключателей с указанием включения групп светильников.</li>
-                            <li>План размещения групп розеток, слаботочки и электрических выводов. Размеры и высоты.</li>
-                            <li>План размещения подогрева полов с привязкой терморегуляторов.</li>
-                            <li>Схема отделки помещений.</li>
-                            <li>План расстановки мебели.</li>
-                            <li>План расстановки сантехнического оборудования.</li>
-                            <li>Развертки по стенам основных помещений.</li>
-                            <li>Ведомость отделки помещений.</li>                            
-                        </ol>
+                        <h3 class="h3green" style="text-align: left; margin: 0 0 20px 0;" data-i18n="body_text19"></h3>
+                        <ol style="display: block; text-align: left; color: #323335; font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.6;" data-i18n="body_text20"></ol>
                     </div>
                 </div>
             </section>
             <section>
                 <div style="padding: 60px;">
-                    <div class="h3green" style="text-align: left; padding: 20px 0;">4-этап: Комплектация</div>
+                    <div class="h3green" style="text-align: left; padding: 20px 0;" data-i18n="body_text21"></div>
                     <div style="display: flex; color: #323335; font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.5; margin-top: 20px;">
                         <div style="width: 50%; padding: 20px 15px 50px;">
-                            <ul>
-                                <li>Персональный ориентировочный расчет стоимости наполнения помещения. В этот расчет входят вся мебель, оборудование и чистовые отделочные материалы (приборы отопления, сантехника, освещение, электрофурнитура, бытовая техника,обои, плитка, краска, декоративная штукатурка, напольные покрытия и т.п.).</li>
-                                <li>Поиск поставщиков и подрядчиков, осуществляющих продажу, поставку или изготовление комплектующих, предусмотренные Дизайн-проектом.</li>
-                            </ul>
+                            <ul data-i18n="body_text22"></ul>
                         </div>
                         <div style="width: 50%; padding: 20px 15px 50px;">
-                            <ul>
-                                <li>Направление запросов указанным лицам для получения не более 2 коммерческих предложений, содержащих информацию о стоимости и сроках поставки комплектующих.</li>
-                                <li>Выезды вместе с вами на подборы. Поездки в салоны поставщиков чистовых отделочных материалов, мебели, освещения и т.д. (до 10 поездок).</li>
-                            </ul>
+                            <ul data-i18n="body_text23"></ul>
                         </div>
                     </div>
                 </div>
@@ -240,12 +193,8 @@
                         <img style="display: block; margin: auto; max-width: 645px;" src="Page3Foto12.webp" alt="">
                     </div>
                     <div style="width: 50%; padding: 20px 0px 20px 90px; margin: auto;">
-                        <h3 class="h3green" style="text-align: left; margin: 0 0 20px 0;">
-                            5-этап: Декорирование
-                        </h3>
-                        <p style="color: #323335; font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.6; margin: unset;">
-                            Декорирование помещений. Подбор аксессуаров, картин, посуды, текстиля (ковры, шторы).
-                        </p>
+                        <h3 class="h3green" style="text-align: left; margin: 0 0 20px 0;" data-i18n="body_text24"></h3>
+                        <p style="color: #323335; font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.6; margin: unset;" data-i18n="body_text25"></p>
                     </div>
                 </div>
             </section>
@@ -293,11 +242,12 @@
                 </div>
                 <br><br><br>
                 <div style="text-align: center; margin-top: 40px; font-weight: 300; font-family: Roboto,sans-serif;">
-                    <a data-cy="foot.el_5" href="" style="padding: 5px 10px; color: #323335;" onmouseover="">Impressum</a>
-                    <a data-cy="foot.el_6" href="" style="padding: 5px 10px; color: #323335;">Datenschutz</a>
-                    <a data-cy="foot.el_7" href="" style="padding: 5px 10px; color: #323335;">Cookie-Einstellungen</a>
+                    <a data-cy="foot.el_5" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text1"></a>
+                    <a data-cy="foot.el_6" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text2"></a>
+                    <a data-cy="foot.el_7" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text3"></a>
                 </div>
             </footer>
         </div>
+        <script src="../translation.js"></script>
     </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,22 +21,22 @@
                 <div>
                     <nav>
                         <ul class="topnav">
-                            <li><a data-cy="head.el_1" href="../../index.html">Главная</a></li>
-                            <li><a data-cy="head.el_2" href="../../Page2/2ndPage.html">Проекты</a></li>
+                            <li><a data-cy="head.el_1" href="../../index.html" data-i18n="header_text1"></a></li>
+                            <li><a data-cy="head.el_2" href="../../Page2/2ndPage.html" data-i18n="header_text2"></a></li>
                             <li class="dropdown">
-                                <button data-cy="head.el_3" class="dropbtn" onclick="document.location='../3rdPage.html'" style="cursor: pointer;">Этапы/Стоимость
+                                <button data-cy="head.el_3" class="dropbtn" onclick="document.location='../3rdPage.html'" style="cursor: pointer;" data-i18n="header_text3">
                                     <i class="fa fa-caret-down"></i>
                                 </button>
                                 <nav>
                                     <ul class="dropdown-content">
-                                        <li><a data-cy="head.el_3a" href="3rdPageA.html">Консультация</a></li>
-                                        <li><a data-cy="head.el_3b" href="../Page3b/3rdPageB.html">Планировочное решение</a></li>
-                                        <li><a data-cy="head.el_3c" href="../Page3c/3rdPageC.html">Эскиз-проект</a></li>
-                                        <li><a data-cy="head.el_3d" href="../Page3d/3rdPageD.html">Дизайн-проект</a></li>
+                                        <li><a data-cy="head.el_3a" href="3rdPageA.html" data-i18n="header_text4"></a></li>
+                                        <li><a data-cy="head.el_3b" href="../Page3b/3rdPageB.html" data-i18n="header_text5"></a></li>
+                                        <li><a data-cy="head.el_3c" href="../Page3c/3rdPageC.html" data-i18n="header_text6"></a></li>
+                                        <li><a data-cy="head.el_3d" href="../Page3d/3rdPageD.html" data-i18n="header_text7"></a></li>
                                     </ul>
                                 </nav>
                             </li>
-                            <li><a data-cy="head.el_4" href="../../Page4/4thPage.html">Контакты</a></li>                            
+                            <li><a data-cy="head.el_4" href="../../Page4/4thPage.html" data-i18n="header_text8"></a></li>                            
                         </ul>
                     </nav>
                 </div>
@@ -72,6 +72,8 @@
                                 </g>
                             </svg>
                         </a>
+                        <a href="3rdPageA.html" onclick="changeLanguage('en')">en</a>
+                        <a href="3rdPageA.html" onclick="changeLanguage('de')">de</a>  
                     </div>
                 </div>
             </header>            
@@ -79,28 +81,19 @@
         <div>
             <section>
                 <div style="padding: 60px 60px 80px 60px;">
-                    <h2 class="h2green" style="margin: 0 0 20px 0;">Консультация онлайн</h2>
-                    <p style="text-align: center; color: #323335; font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.6;">
-                        Это безлимитное количество вопросов на протяжении недели (5 рабочих дней).
-                    </p>
+                    <h2 class="h2green" style="margin: 0 0 20px 0;" data-i18n="body_text1"></h2>
+                    <p style="text-align: center; color: #323335; font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.6;" data-i18n="body_text2"></p>
                 </div>                
             </section>
             <section>
                 <div style="display: flex; color: white; padding: 60px; max-width: 1440px; margin: auto; box-sizing: border-box;">
                     <div style="width: 50%; background-color: #517455; margin: 20px 15px 30px; padding: 10px 30px;">
-                        <h3 class="h3white">До консультации</h3>
-                        <ul style="font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.5;">
-                            <li>Вы отправляете мне фото, при необходимости размеры ваших помещений, которые необходимо разобрать.</li>
-                            <li>Также подходит моим клиентам, после завершения эскиз или дизайн проекта, чтобы решить последние вопросы/детали во время покупок.</li>
-                        </ul>
+                        <h3 class="h3white" data-i18n="body_text3"></h3>
+                        <ul style="font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.5;" data-i18n="body_text4" data-i18n="body_text4"></ul>
                     </div>
                     <div style="width: 50%; background-color: #517455; margin: 20px 15px 30px; padding: 10px 30px;">
-                        <h3 class="h3white">Во время консультации</h3>
-                        <ul style="font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.5;">
-                            <li>Вы можете присылать фото мебели и аксессуаров из магазинов, с сайтов или просто задавать вопросы касаемо планирования и дизайна интерьера.</li>
-                            <li>Подбор вещей по сайтам и магазинам осуществляется самостоятельно (хотя нередко сама отправляю ссылки на подходящие позиции).</li>
-                            <li>Отвечаю в течении дня в письменном или голосовом виде</li>
-                        </ul>
+                        <h3 class="h3white" data-i18n="body_text5"></h3>
+                        <ul style="font-size: 18px; font-family: Roboto, sans-serif; font-weight: 300; line-height: 1.5;" data-i18n="body_text6"></ul>
                     </div>
                 </div>                
             </section>
@@ -148,11 +141,12 @@
                 </div>
                 <br><br><br>
                 <div style="text-align: center; margin-top: 40px; font-weight: 300; font-family: Roboto,sans-serif;">
-                    <a data-cy="foot.el_5" href="" style="padding: 5px 10px; color: #323335;" onmouseover="">Impressum</a>
-                    <a data-cy="foot.el_6" href="" style="padding: 5px 10px; color: #323335;">Datenschutz</a>
-                    <a data-cy="foot.el_7" href="" style="padding: 5px 10px; color: #323335;">Cookie-Einstellungen</a>
+                    <a data-cy="foot.el_5" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text1"></a>
+                    <a data-cy="foot.el_6" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text2"></a>
+                    <a data-cy="foot.el_7" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text3"></a>
                 </div>
             </footer>
         </div>
+        <script src="../../translation.js"></script>
     </body>
 </html>

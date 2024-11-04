@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,22 +22,22 @@
                 <div>
                     <nav>
                         <ul class="topnav">
-                            <li><a data-cy="head.el_1" href="../../index.html">Главная</a></li>
-                            <li><a data-cy="head.el_2" href="../../Page2/2ndPage.html">Проекты</a></li>
+                            <li><a data-cy="head.el_1" href="../../index.html" data-i18n="header_text1"></a></li>
+                            <li><a data-cy="head.el_2" href="../../Page2/2ndPage.html" data-i18n="header_text2"></a></li>
                             <li class="dropdown">
-                                <button data-cy="head.el_3" class="dropbtn" onclick="document.location='../3rdPage.html'" style="cursor: pointer;">Этапы/Стоимость
+                                <button data-cy="head.el_3" class="dropbtn" onclick="document.location='../3rdPage.html'" style="cursor: pointer;" data-i18n="header_text3">
                                     <i class="fa fa-caret-down"></i>
                                 </button>
                                 <nav>
                                     <ul class="dropdown-content">
-                                        <li><a data-cy="head.el_3a" href="../Page3a/3rdPageA.html">Консультация</a></li>
-                                        <li><a data-cy="head.el_3b" href="3rdPageB.html">Планировочное решение</a></li>
-                                        <li><a data-cy="head.el_3c" href="../Page3c/3rdPageC.html">Эскиз-проект</a></li>
-                                        <li><a data-cy="head.el_3d" href="../Page3d/3rdPageD.html">Дизайн-проект</a></li>
+                                        <li><a data-cy="head.el_3a" href="../Page3a/3rdPageA.html" data-i18n="header_text4"></a></li>
+                                        <li><a data-cy="head.el_3b" href="3rdPageB.html" data-i18n="header_text5"></a></li>
+                                        <li><a data-cy="head.el_3c" href="../Page3c/3rdPageC.html" data-i18n="header_text6"></a></li>
+                                        <li><a data-cy="head.el_3d" href="../Page3d/3rdPageD.html" data-i18n="header_text7"></a></li>
                                     </ul>
                                 </nav>
                             </li>
-                            <li><a data-cy="head.el_4" href="../../Page4/4thPage.html">Контакты</a></li>                            
+                            <li><a data-cy="head.el_4" href="../../Page4/4thPage.html" data-i18n="header_text8"></a></li>                            
                         </ul>
                     </nav>
                 </div>
@@ -73,6 +73,8 @@
                                 </g>
                             </svg>
                         </a>
+                        <a href="3rdPageB.html" onclick="changeLanguage('en')">en</a>
+                        <a href="3rdPageB.html" onclick="changeLanguage('de')">de</a>  
                     </div>
                 </div>
             </header>            
@@ -80,76 +82,59 @@
         <div>
             <section style="background-color: rgb(81, 116, 85);">
                 <div style="max-width: 730px; margin: auto; padding: 60px; box-sizing: unset;">
-                    <h2 class="h2white">Планировочное решение</h2>
-                    <p class="ptext_white" style="text-align: center;">
-                        Поместится ли диван в гостиной? Вам срочно нужно больше места для хранения в небольшой комнате? Я помогу вам оптимально использовать пространство, спланировать комнату или всю квартиру. Вы получите профессиональный 2D, а также 3D план.
-                        <br><br>
-                        Эта услуга также подходит для тех, кто хочет проверить возможности квартиры до её приобретения.
-                    </p>
+                    <h2 class="h2white" data-i18n="body_text1"></h2>
+                    <p class="ptext_white" style="text-align: center;" data-i18n="body_text2"></p>
                 </div>
             </section>
             <section>
                 <div class="ptext_black" style="display: flex; padding: 60px 70px; max-width: 1440px; margin: auto;">
                     <div style="width: 50%; padding: 20px 15px 30px;">
-                        <h3 class="h3green" style="text-align: left;">До начала работ</h3>
-                        <ul>
-                            <li>Услуга оплачивается перед началом работ в полном размере</li>
-                            <li>После оплаты отправляю вам бриф для заполнения</li>
-                            <li>Вам необходимо будет отправить все необходимые размеры вашей комнаты/квартиры/дома.</li>
-                        </ul>
-                        <p>* выезд специалиста или меня, для обмера помещений, оплачивается отдельно.</p>
+                        <h3 class="h3green" style="text-align: left;" data-i18n="body_text3"></h3>
+                        <ul data-i18n="body_text4"></ul>
+                        <p data-i18n="body_text5"></p>
                     </div>
                     <div style="width: 50%; padding: 20px 15px 30px;">
-                        <h3 class="h3green" style="text-align: left;">Вы получаете</h3>
-                        <ul>
-                            <li>Несколько вариантов планировочных решений вашего интерьера (обычно 3-5 вариантов) в 2D, а также в 3D объёме.</li>
-                            <li>Итоговый вариант будет профессионально оформлен со всеми необходимыми планами:</li>
-                        </ul>
-                        <p>
-                            - Обмерочный план помещения; <br>
-                            - Окончательный вариант планировки со всеми необходимыми для понимания габаритов размерами; <br>
-                            - План демонтажа; <br>
-                            - План монтажа со всеми необходимыми размерами и основными привязками сантехнического оборудования; <br>
-                            - При необходимости мы также можем предоставить рабочий файл в формате dwg. <br>
-                        </p>
+                        <h3 class="h3green" style="text-align: left;" data-i18n="body_text6"></h3>
+                        <ul data-i18n="body_text7"></ul>
+                        <p data-i18n="body_text8"></p>
                     </div>
                 </div>
             </section>
             <section style="background-color: rgb(81, 116, 85);">
                 <div style="padding: 60px 0;">
                     <div>
-                        <h3 class="h3white">Примеры планировочных решений</h3>
+                        <h3 class="h3white" data-i18n="body_text9"></h3>
                     </div>
                     <div class="slideshow-container" style="margin-top: 25px;">
                         <div data-cy="p3b.slide_1_1" class="mySlides1 fade">
                             <div class="numbertext">1 / 6</div>
                             <img src="slideshow1/Foto1.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Планировочное решение для гостиной и столовой зоны в частном доме <br>Бад-Энхаузен, Германия</div>
+                            <div class="textWhite" data-i18n="body_text10"></div>
                         </div>                    
                         <div data-cy="p3b.slide_1_2" class="mySlides1 fade">
                             <div class="numbertext">2 / 6</div>
                             <img src="slideshow1/Foto2.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Планировочное решение для детской частной квартиры <br>Ташкент</div>
+                            <div class="textWhite" data-i18n="body_text11"></div>
                         </div>                    
                         <div data-cy="p3b.slide_1_3" class="mySlides1 fade">
                             <div class="numbertext">3 / 6</div>
                             <img src="slideshow1/Foto3.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Планировочное решение для квартиры в ЖК Boulevard <br>Ташкент</div>
+                            <div class="textWhite" data-i18n="body_text12"></div>
                         </div>    
                         <div data-cy="p3b.slide_1_4" class="mySlides1 fade">
                             <div class="numbertext">4 / 6</div>
                             <img src="slideshow1/Foto4.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Планировочное решение для гостиной частного дома <br>Лёне, Германия</div>
+                            <div class="textWhite" data-i18n="body_text13"></div>
                         </div>    
                         <div data-cy="p3b.slide_1_5" class="mySlides1 fade">
                             <div class="numbertext">5 / 6</div>
                             <img src="slideshow1/Foto5.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Планировочное решение для спальни частного дома <br>Лёне, Германия</div>
+                            <div class="textWhite" data-i18n="body_text14"></div>
                         </div>    
                         <div data-cy="p3b.slide_1_6" class="mySlides1 fade">
                             <div class="numbertext">6 / 6</div>
                             <img src="slideshow1/Foto6.webp" style="width:100%; padding: 20px 0;">
-                            <div class="textWhite">Планировочное решение для 1-го этажа частного дома <br>Бонн, Германия</div>
+                            <div class="textWhite" data-i18n="body_text15"></div>
                         </div>    
                         <a data-cy="p3b.el_1" class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
                         <a data-cy="p3b.el_2" class="next" onclick="plusSlides(1, 0)">&#10095;</a>
@@ -169,33 +154,33 @@
             <section>
                 <div style="padding: 60px 0;">
                     <div>
-                        <h3 class="h3green">Итоговый вариант планов на примере одной квартиры</h3>
+                        <h3 class="h3green" data-i18n="body_text16"></h3>
                     </div>
                     <div class="slideshow-container" style="margin-top: 25px;">
                         <div data-cy="p3b.slide_2_1" class="mySlides2 fade">
                             <div class="numbertext">1 / 5</div>
                             <img src="slideshow2/Foto1.webp" style="width:100%; padding: 20px 0;">
-                            <div class="text">Планировочное решение для гостиной и столовой зоны в частном доме <br>Бад-Энхаузен, Германия</div>
+                            <div class="text" data-i18n="body_text17"></div>
                         </div>                    
                         <div data-cy="p3b.slide_2_2" class="mySlides2 fade">
                             <div class="numbertext">2 / 5</div>
                             <img src="slideshow2/Foto2.webp" style="width:100%; padding: 20px 0;">
-                            <div class="text">Планировочное решение для детской частной квартиры <br>Ташкент</div>
+                            <div class="text" data-i18n="body_text18"></div>
                         </div>                    
                         <div data-cy="p3b.slide_2_3" class="mySlides2 fade">
                             <div class="numbertext">3 / 5</div>
                             <img src="slideshow2/Foto3.webp" style="width:100%; padding: 20px 0;">
-                            <div class="text">Планировочное решение для квартиры в ЖК Boulevard <br>Ташкент</div>
+                            <div class="text" data-i18n="body_text19"></div>
                         </div>    
                         <div data-cy="p3b.slide_2_4" class="mySlides2 fade">
                             <div class="numbertext">4 / 5</div>
                             <img src="slideshow2/Foto4.webp" style="width:100%; padding: 20px 0;">
-                            <div class="text">Планировочное решение для гостиной частного дома <br>Лёне, Германия</div>
+                            <div class="text" data-i18n="body_text20"></div>
                         </div>    
                         <div data-cy="p3b.slide_2_5" class="mySlides2 fade">
                             <div class="numbertext">5 / 5</div>
                             <img src="slideshow2/Foto5.webp" style="width:100%; padding: 20px 0;">
-                            <div class="text">Планировочное решение для спальни частного дома <br>Лёне, Германия</div>
+                            <div class="text" data-i18n="body_text21"></div>
                         </div>     
                         <a data-cy="p3b.el_3" class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
                         <a data-cy="p3b.el_4" class="next" onclick="plusSlides(1, 1)">&#10095;</a>
@@ -255,12 +240,13 @@
                 </div>
                 <br><br><br>
                 <div style="text-align: center; margin-top: 40px; font-weight: 300; font-family: Roboto,sans-serif;">
-                    <a data-cy="foot.el_5" href="" style="padding: 5px 10px; color: #323335;" onmouseover="">Impressum</a>
-                    <a data-cy="foot.el_6" href="" style="padding: 5px 10px; color: #323335;">Datenschutz</a>
-                    <a data-cy="foot.el_7" href="" style="padding: 5px 10px; color: #323335;">Cookie-Einstellungen</a>
+                    <a data-cy="foot.el_5" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text1"></a>
+                    <a data-cy="foot.el_6" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text2"></a>
+                    <a data-cy="foot.el_7" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text3"></a>
                 </div>
             </footer>
         </div>
+        <script src="../../translation.js"></script>
         <script src="../../slideshows2.js"></script>
     </body>
 </html>

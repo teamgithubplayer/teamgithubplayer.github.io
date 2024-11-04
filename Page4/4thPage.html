@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,22 +21,22 @@
                 <div>
                     <nav>
                         <ul class="topnav">
-                            <li><a data-cy="head.el_1" href="../index.html">Главная</a></li>
-                            <li><a data-cy="head.el_2" href="../Page2/2ndPage.html">Проекты</a></li>
+                            <li><a data-cy="head.el_1" href="../index.html" data-i18n="header_text1"></a></li>
+                            <li><a data-cy="head.el_2" href="../Page2/2ndPage.html" data-i18n="header_text2"></a></li>
                             <li class="dropdown">
-                                <button data-cy="head.el_3" class="dropbtn" onclick="document.location='../Page3/3rdPage.html'" style="cursor: pointer;">Этапы/Стоимость
+                                <button data-cy="head.el_3" class="dropbtn" onclick="document.location='../Page3/3rdPage.html'" style="cursor: pointer;" data-i18n="header_text3">
                                     <i class="fa fa-caret-down"></i>
                                 </button>
                                 <nav>
                                     <ul class="dropdown-content">
-                                        <li><a data-cy="head.el_3a" href="../Page3/Page3a/3rdPageA.html">Консультация</a></li>
-                                        <li><a data-cy="head.el_3b" href="../Page3/Page3b/3rdPageB.html">Планировочное решение</a></li>
-                                        <li><a data-cy="head.el_3c" href="../Page3/Page3c/3rdPageC.html">Эскиз-проект</a></li>
-                                        <li><a data-cy="head.el_3d" href="../Page3/Page3d/3rdPageD.html">Дизайн-проект</a></li>
+                                        <li><a data-cy="head.el_3a" href="../Page3/Page3a/3rdPageA.html" data-i18n="header_text4"></a></li>
+                                        <li><a data-cy="head.el_3b" href="../Page3/Page3b/3rdPageB.html" data-i18n="header_text5"></a></li>
+                                        <li><a data-cy="head.el_3c" href="../Page3/Page3c/3rdPageC.html" data-i18n="header_text6"></a></li>
+                                        <li><a data-cy="head.el_3d" href="../Page3/Page3d/3rdPageD.html" data-i18n="header_text7"></a></li>
                                     </ul>
                                 </nav>
                             </li>
-                            <li><a data-cy="head.el_4" class="active" href="4thPage.html">Контакты</a></li>                            
+                            <li><a data-cy="head.el_4" class="active" href="4thPage.html" data-i18n="header_text8"></a></li>                            
                         </ul>
                     </nav>
                 </div>
@@ -72,6 +72,8 @@
                                 </g>
                             </svg>
                         </a>
+                        <a href="4thPage.html" onclick="changeLanguage('en')">en</a>
+                        <a href="4thPage.html" onclick="changeLanguage('de')">de</a>
                     </div>
                 </div>
             </header>            
@@ -84,7 +86,7 @@
                     </div>
                     <div style="width: 50%;">
                         <div style="padding: 0 120px;">
-                            <h3 class="h3green" style="text-align: left; padding-left: unset;">Вопросы?</h3>
+                            <h3 class="h3green" style="text-align: left; padding-left: unset;" data-i18n="body_text1"></h3>
                             <a data-cy="p4.el_1" class="ptext_black" href="mailto:info@interior-design.de">info@interior-design.de</a>
                             <br><br>
                             <a data-cy="p4.el_2" class="ptext_black" href="tel:+49176123456789">+49 176 123 45678</a>
@@ -136,11 +138,12 @@
                 </div>
                 <br><br><br>
                 <div style="text-align: center; margin-top: 40px; font-weight: 300; font-family: Roboto,sans-serif;">
-                    <a data-cy="foot.el_5" href="" style="padding: 5px 10px; color: #323335;" onmouseover="">Impressum</a>
-                    <a data-cy="foot.el_6" href="" style="padding: 5px 10px; color: #323335;">Datenschutz</a>
-                    <a data-cy="foot.el_7" href="" style="padding: 5px 10px; color: #323335;">Cookie-Einstellungen</a>
+                    <a data-cy="foot.el_5" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text1"></a>
+                    <a data-cy="foot.el_6" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text2"></a>
+                    <a data-cy="foot.el_7" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text3"></a>
                 </div>
             </footer>
         </div>
+        <script src="../translation.js"></script>
     </body>
 </html>

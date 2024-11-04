@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,22 +22,22 @@
                 <div>
                     <nav>
                         <ul class="topnav">
-                            <li><a data-cy="head.el_1" href="../../index.html">Главная</a></li>
-                            <li><a data-cy="head.el_2" href="../../Page2/2ndPage.html">Проекты</a></li>
+                            <li><a data-cy="head.el_1" href="../../index.html" data-i18n="header_text1"></a></li>
+                            <li><a data-cy="head.el_2" href="../../Page2/2ndPage.html" data-i18n="header_text2"></a></li>
                             <li class="dropdown">
-                                <button data-cy="head.el_3" class="dropbtn" onclick="document.location='../3rdPage.html'" style="cursor: pointer;">Этапы/Стоимость
+                                <button data-cy="head.el_3" class="dropbtn" onclick="document.location='../3rdPage.html'" style="cursor: pointer;" data-i18n="header_text3">
                                     <i class="fa fa-caret-down"></i>
                                 </button>
                                 <nav>
                                     <ul class="dropdown-content">
-                                        <li><a data-cy="head.el_3a" href="../Page3a/3rdPageA.html">Консультация</a></li>
-                                        <li><a data-cy="head.el_3b" href="../Page3b/3rdPageB.html">Планировочное решение</a></li>
-                                        <li><a data-cy="head.el_3c" href="../Page3c/3rdPageC.html">Эскиз-проект</a></li>
-                                        <li><a data-cy="head.el_3d" href="3rdPageD.html">Дизайн-проект</a></li>
+                                        <li><a data-cy="head.el_3a" href="../Page3a/3rdPageA.html" data-i18n="header_text4"></a></li>
+                                        <li><a data-cy="head.el_3b" href="../Page3b/3rdPageB.html" data-i18n="header_text5"></a></li>
+                                        <li><a data-cy="head.el_3c" href="../Page3c/3rdPageC.html" data-i18n="header_text6"></a></li>
+                                        <li><a data-cy="head.el_3d" href="3rdPageD.html" data-i18n="header_text7"></a></li>
                                     </ul>
                                 </nav>
                             </li>
-                            <li><a data-cy="head.el_4" href="../../Page4/4thPage.html">Контакты</a></li>                            
+                            <li><a data-cy="head.el_4" href="../../Page4/4thPage.html" data-i18n="header_text8"></a></li>                            
                         </ul>
                     </nav>
                 </div>
@@ -73,6 +73,8 @@
                                 </g>
                             </svg>
                         </a>
+                        <a href="3rdPageD.html" onclick="changeLanguage('en')">en</a>
+                        <a href="3rdPageD.html" onclick="changeLanguage('de')">de</a>  
                     </div>
                 </div>
             </header>            
@@ -80,8 +82,8 @@
         <div>
             <section>
                 <div style="max-width: 730px; margin: auto; padding: 60px; box-sizing: unset;">
-                    <h2 class="h2green">Дизайн-проект</h2>
-                    <p class="ptext_black" style="text-align: center;">
+                    <h2 class="h2green" data-i18n="body_text1">Дизайн-проект</h2>
+                    <p class="ptext_black" style="text-align: center;" data-i18n="body_text2">
                         Полный дизайн-проект включает в себя работу над созданием фотореалистичных 3D-визуализаций будущего интерьера Вашей квартиры/дома и разработку пакета чертежей со схемами реализаций для воплощения проекта в жизнь.
                         <br><br>
                         * Дизайн-проект включает в себя все этапы планировочного решения и эскиз-проекта.
@@ -91,17 +93,17 @@
             <section style="background-color: rgb(39, 56, 41);">
                 <div class="ptext_white" style="display: flex; padding: 60px 70px; max-width: 1440px; margin: auto;">
                     <div style="width: 50%; margin: 20px 15px 30px; background-color: #576e69;">
-                        <h3 class="h3white" style="text-align: left;">До начала работ</h3>
-                        <ul>
+                        <h3 class="h3white" style="text-align: left;" data-i18n="body_text3">До начала работ</h3>
+                        <ul data-i18n="body_text4">
                             <li>Услуга оплачивается перед началом работ в полном размере</li>
                             <li>После оплаты отправляю вам бриф для заполнения</li>
                             <li>Вам необходимо будет отправить все необходимые размеры вашей комнаты/квартиры/дома.</li>
                         </ul>
-                        <p>* выезд специалиста или меня, для обмера помещений, оплачивается отдельно.</p>
+                        <p data-i18n="body_text5">* выезд специалиста или меня, для обмера помещений, оплачивается отдельно.</p>
                     </div>
                     <div style="width: 50%; margin: 20px 15px 30px; background-color: #576e69;">
-                        <h3 class="h3white" style="text-align: left;">Вы получаете</h3>
-                        <ul>
+                        <h3 class="h3white" style="text-align: left;" data-i18n="body_text6">Вы получаете</h3>
+                        <ul data-i18n="body_text7">
                             <li>После завершения этапов планировочного решения и эскиз-проекта, мы приступаем к созданию фотореалистичных визуализаций.</li>
                             <li>Консультируем, дорабатываем и утверждаем их.</li>
                             <li>Подготавливаем пакет чертежей и схем реализаций.</li>
@@ -113,7 +115,7 @@
             <section>
                 <div style="padding: 60px 0;">
                     <div>
-                        <h3 class="h3green">Фотореалистичные визуализации</h3>
+                        <h3 class="h3green" data-i18n="body_text8">Фотореалистичные визуализации</h3>
                     </div>
                     <div class="slideshow-container" style="margin-top: 25px;">
                         <div data-cy="p3d.slide_1_1" class="mySlides1 fade">
@@ -148,33 +150,33 @@
             <section style="background-color: rgb(39, 56, 41);">
                 <div style="padding: 60px 0;">
                     <div>
-                        <h3 class="h3white">Пример пакета чертежей</h3>
+                        <h3 class="h3white" data-i18n="body_text9">Пример пакета чертежей</h3>
                     </div>
                     <div class="slideshow-container" style="margin-top: 25px;">
                         <div data-cy="p3d.slide_2_1" class="mySlides2 fade">
                             <div class="numbertext">1 / 5</div>
                             <img src="slideshow2/Foto1.webp" style="width:100%; padding: 20px 0;">
-                            <div class="text">План с расстановкой светильников <br>Бад-Энхаузен, Германия</div>
+                            <div class="textWhite" data-i18n="body_text10">План с расстановкой светильников <br>Бад-Энхаузен, Германия</div>
                         </div>                    
                         <div data-cy="p3d.slide_2_2" class="mySlides2 fade">
                             <div class="numbertext">2 / 5</div>
                             <img src="slideshow2/Foto2.webp" style="width:100%; padding: 20px 0;">
-                            <div class="text">План подключения освещения <br>Ташкент</div>
+                            <div class="textWhite" data-i18n="body_text11">План подключения освещения <br>Ташкент</div>
                         </div>                    
                         <div data-cy="p3d.slide_2_3" class="mySlides2 fade">
                             <div class="numbertext">3 / 5</div>
                             <img src="slideshow2/Foto3.webp" style="width:100%; padding: 20px 0;">
-                            <div class="text">План электрики <br>Ташкент</div>
+                            <div class="textWhite" data-i18n="body_text12">План электрики <br>Ташкент</div>
                         </div>    
                         <div data-cy="p3d.slide_2_4" class="mySlides2 fade">
                             <div class="numbertext">4 / 5</div>
                             <img src="slideshow2/Foto4.webp" style="width:100%; padding: 20px 0;">
-                            <div class="text">Развертка комнаты <br>Лёне, Германия</div>
+                            <div class="textWhite" data-i18n="body_text13">Развертка комнаты <br>Лёне, Германия</div>
                         </div>    
                         <div data-cy="p3d.slide_2_5" class="mySlides2 fade">
                             <div class="numbertext">5 / 5</div>
                             <img src="slideshow2/Foto5.webp" style="width:100%; padding: 20px 0;">
-                            <div class="text">План потолков <br>Лёне, Германия</div>
+                            <div class="textWhite" data-i18n="body_text14">План потолков <br>Лёне, Германия</div>
                         </div>     
                         <a data-cy="p3d.el_1" class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
                         <a data-cy="p3d.el_2" class="next" onclick="plusSlides(1, 1)">&#10095;</a>
@@ -192,8 +194,8 @@
             </section>
             <section>
                 <div class="ptext_black" style="text-align: center; padding: 60px;">
-                    <p>В пакет чертежей входит:</p>
-                    <ul style="display: inline-block; text-align: left;">
+                    <p data-i18n="body_text15">В пакет чертежей входит:</p>
+                    <ul style="display: inline-block; text-align: left;" data-i18n="body_text16">
                         <li>Ведомость чертежей</li>
                         <li>Обмерный план</li>
                         <li>План демонтажных работ</li>
@@ -261,12 +263,13 @@
                 </div>
                 <br><br><br>
                 <div style="text-align: center; margin-top: 40px; font-weight: 300; font-family: Roboto,sans-serif;">
-                    <a data-cy="foot.el_5" href="" style="padding: 5px 10px; color: #323335;" onmouseover="">Impressum</a>
-                    <a data-cy="foot.el_6" href="" style="padding: 5px 10px; color: #323335;">Datenschutz</a>
-                    <a data-cy="foot.el_7" href="" style="padding: 5px 10px; color: #323335;">Cookie-Einstellungen</a>
+                    <a data-cy="foot.el_5" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text1"></a>
+                    <a data-cy="foot.el_6" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text2"></a>
+                    <a data-cy="foot.el_7" href="" style="padding: 5px 10px; color: #323335;" data-i18n="footer_text3"></a>
                 </div>
             </footer>
         </div>
+        <script src="../../translation.js"></script>
         <script src="../../slideshows2.js"></script>
     </body>
 </html>
