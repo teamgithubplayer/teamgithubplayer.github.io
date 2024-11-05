@@ -1,5 +1,5 @@
 describe('My Page', () => {
-  it('Main Page', () => {
+  it('Main Page - index.html', () => {
     cy.visit('')
     cy.get('[data-cy="p1.el_3"]').click()
     cy.url().should('include', '/Page3/3rdPage.html')
@@ -13,7 +13,7 @@ describe('My Page', () => {
   })
   it('Page3', () => {
     cy.visit('/Page3/3rdPage.html')
-    cy.get('[data-cy="p2.el_2"]').click()
+    cy.get('[data-cy="p3.el_1"]').click()
   })
   it('Page3a', () => {
     cy.visit('/Page3/Page3a/3rdPageA.html')
@@ -28,6 +28,6 @@ describe('My Page', () => {
     cy.visit('/Page3/Page3d/3rdPageD.html')
   })
   it('Page4', () => {
-    cy.visit('/Page4/4thPageD.html')
+    cy.visit('/Page4/4thPage.html')
   })
 })
